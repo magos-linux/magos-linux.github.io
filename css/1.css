@@ -5,7 +5,7 @@
 #wb_main > .wb_cont_bg { background: transparent none repeat-x center center; background-size: contain; }
 #wb_footer { height: 29px; }
 #wb_footer > .wb_cont_bg { background: rgba(51, 102, 204, 0.93) none repeat-x center top; background-size: auto auto; }
-body { background: transparent url("../gallery_gen/cb95376c3579ee6c46cc71bcf24c7e05.jpg") no-repeat scroll center top; background-size: auto auto; }
+body { background: transparent url("../gallery_gen/fon.jpg") no-repeat scroll center top; background-size: auto auto; }
 .wb_sbg { background: transparent url("../gallery_gen/e3aafeaf8285d9e3a84e4e59f81acb89.png") repeat-x center bottom; }
 body, .wb_sbg { min-width: 1200px; min-height: 1019px; }
 .wb_cont_inner { width: 1200px; }
