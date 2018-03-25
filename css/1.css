@@ -8,7 +8,7 @@
  }
  
  #wb_main {
-     height: 900px;
+     height: 1600px;
  }
  
  #wb_main>.wb_cont_bg {
@@ -37,7 +37,7 @@
  body,
  .wb_sbg {
      min-width: 1200px;
-     min-height: 1019px;
+     min-height: 2000px;
  }
  
  .wb_cont_inner {
@@ -50,9 +50,9 @@
  }
  
  .root {
-     height: 1092px;
+     height: 2000px;
      overflow: visible;
-     min-height: 1019px;
+     min-height: 2000px;
  }
  
  #wb_element_instance0 {

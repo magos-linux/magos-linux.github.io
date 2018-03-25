@@ -54,13 +54,30 @@
                     <div class="wb_shp"></div>
                 </div>
                 <div id="wb_element_instance4" class="wb_element" style=" line-height: normal;">
-                    <p class="wb-stl-normal"><strong>Сборка 20180224</strong></p>
+                    <p class="wb-stl-normal"><strong>Сборка 20180325</strong></p>
 
                     <ul>
-                        <li class="wb-stl-normal"> обновления на 24.02.2018.</li>
-                        <li class="wb-stl-normal"> ядро 4.9.83, с дополнительными механизмами противодействия аппаратным уязвимостям Spectre и Meltdown.</li>
-                        <li class="wb-stl-normal"> исправлен скрипт подключения к домену.</li>
-                        <li class="wb-stl-normal"> добавлены настройки тем для старых версий gtk3 (сборки 2014red, 2014.64), что устраняет проблемы с отображением граф. элементов в программах на gtk3 (firefox, remmina).</li>
+                        <li class="wb-stl-normal"> обновления на 24.03.2018</li>
+                        <li class="wb-stl-normal"> ядро 4.9.88</li>
+                        <li class="wb-stl-normal"> файловый менеджер mc теперь распознаёт xzm модули как архивы: можно входить в модуль, как в архив, копировать из него файлы, просматривать текстовые файлы. xzm модули подсвечиваются тем же цветом, что и архивы</li>
+                        <li class="wb-stl-normal"> новый параметр загрузки uird.freemedia (применяется вместе uird.copy2ram), который отключает носитель перед стартом системы и создаёт правила для автоматического подключения устройств, если снова подключить устройство</li>
+                        <li class="wb-stl-normal"> перенастроен systemd, теперь система загружается без ошибок на незагруженные дополнительные службы, служба laptop-mode загружается только в случае наличия батареи, отключена служба systemd-resolved</li>
+                        <li class="wb-stl-normal"> перенастроен кеширующий сервер pdnsd, снова добавлен в автозагрузку, в связи с тем что от systemd-resolved не получилось добиться нормального кеширования запросов, в NetworkManager отключен перехват resolved.conf</li>
+                        <li class="wb-stl-normal"> при указании параметра загрузки flightmode беспроводные устройства блокируются на разных уровнях загрузки</li>
+                        <li class="wb-stl-normal"> изменены настройки compiz-fusion по умолчанию, отключена большая часть стандартных эффектов Plasma</li>
+                        <li class="wb-stl-normal"> изменена тема Plasma (взята за основу Breeze)</li>
+                        <li class="wb-stl-normal"> новые настройки xscreensaver. Через 5 минут простоя будут отображаться фото из папки по умолчанию для хранителя экрана MagOS-Data/backgrounds/screensaver/Default. Запрос пароля отменён. Настройки расположены в ~.xscreensaver. Добавлен дополнительный скрипт xss_heartbeat, через который происходит запуск харнителя, он же не даёт срабатывать хранителю при просмотре видео в программах и браузере</li>
+                        <li class="wb-stl-normal"> исправлена ошибка подключения при старте разделов с одинаковыми именами</li>
+                        <li class="wb-stl-normal"> переработаны утилиты создания модулей rpmdrake2xzm, urpm2xzm, преобразования модулей conv4mod</li>
+                        <li class="wb-stl-normal"> исправлены скрипты /usr/lib/magos/scripts и дополнительные действия для dolphin. Добавлены ключи -b -f для dir2xzm. Удалены устаревшие и некоторые дублирующие скрипты</li>
+                        <li class="wb-stl-normal"> исправлена загрузка с бездисковых терминалов через pxe+tftp+nfs</li>
+                        <li class="wb-stl-normal"> исправлены настройки samba сервера, переписан скрипт создающий пользователей и пароли samba</li>
+                        <li class="wb-stl-normal"> изменены некоторые сочетания горячих клавиш (список см при нажатии Win+k)</li>
+                        <li class="wb-stl-normal"> обновлён winetricks</li>
+                        <li class="wb-stl-normal"> исправления цвета фона активного выделения для темы MagOS-dark</li>
+                        <li class="wb-stl-normal"> обновлен раздел документации на Wiki странице</li>
+                        <li class="wb-stl-normal"> документация из wiki сконвертирована в html файл, который заместил файл readme.html в архиве сборки и "Справочную информацию" в главном меню. Документация будет обновляться ежемесячно</li>
+                        <li class="wb-stl-normal"> добавлены пакеты gtk-engines2 python-markdown, в сборку 2016.64 добавлены утилиты leafpad chbg kdeconnect</li>
                     </ul>
                 </div>
                 <div id="wb_element_instance5" class="wb_element" style=" line-height: normal;">
