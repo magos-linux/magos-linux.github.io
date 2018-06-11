@@ -696,7 +696,7 @@
      width: 64px;
      height: 64px;
      display: block;
-     position: static;
+     position: fstatic;
      left: 0px;
      top: 0px;
  }
