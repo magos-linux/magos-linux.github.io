@@ -54,12 +54,14 @@
                     <div class="wb_shp"></div>
                 </div>
                 <div id="wb_element_instance4" class="wb_element" style=" line-height: normal;">
-                    <p class="wb-stl-normal"><strong>Сборка 20181026</strong></p>
+                    <p class="wb-stl-normal"><strong>Сборка 20181123</strong></p>
                     <ul>
-                        <li class="wb-stl-normal">обновления на 25.10.2018</li>
-                        <li class="wb-stl-normal">ядро 4.9.135</li>
-                        <li class="wb-stl-normal">исправления в pfs-utils (urpm2pfs pfsextract mkpfs)</li>
-                        <li class="wb-stl-normal">добавлен скрипт shareinternet для раздачи Интернета Андроид устройству, подключенному через USB</li>
+                        <li class="wb-stl-normal">обновления на 22.11.2018</li>
+                        <li class="wb-stl-normal">ядро 4.9.137</li>
+                        <li class="wb-stl-normal">утилиты urpm2xzm и urpm2pfs объединены в одну с привычным названием urpm2xzm, в модулях собранных новым urpm2xzm сохраняется информация по которой модуль можно собрать заново. Например для обновления. Делается так: urpm2xzm модуль.xzm. Остальные ключи и возможности смотрите в справке утилиты</li>
+                        <li class="wb-stl-normal">в тестовом режиме добавлена утилита chroot2pfs, позволяет делать модули из изменений сделанных в chroot. Например chroot2pfs -o nano.xzm --command urpmi nano, соберет модуль с nano. Такие модули также пересобираются как и модули urpm2xzm.</li>
+                        <li class="wb-stl-normal">добавлен новый параметр ини файла для включения ipv6 по умолчанию на всех сетевых интерфейсах</li>
+                        <li class="wb-stl-normal">в настройки загрузчиков добавлен автоматический поиск раздела с MagOS в случае, если его нет на разделе с загрузчиком</li>
                     </ul>
                     <p>полный список изменений см. в <a href="https://github.com/magos-linux/magos-linux/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Wiki</a></p>
                 </div>
