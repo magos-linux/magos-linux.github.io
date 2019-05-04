@@ -31,8 +31,15 @@
 
 </head>
 
-<body style="background: transparent url('img/fon_201803.jpg') no-repeat scroll center top;
+<body style="background: transparent  no-repeat scroll center top;
 background-size: cover;">
+
+<script>
+var bgPath = 'img/back/img';
+var imagesNumber = 30;
+var rndBg =  Math.floor(Math.random() * imagesNumber);
+document.body.style.backgroundImage = 'url(' + bgPath + rndBg + '.jpg)';
+</script>
 
 	<div class="container">
 		<div class="row">
@@ -164,7 +171,7 @@ background-size: cover;">
 							<div class="col-xl-2 col-md-2 col-sm-2 col-6">
 								<a href="https://github.com/magos-linux/magos-linux/wiki/Главная страница">
 									<div class="text-center pt-2 pb-2">
-										<i class="fa fa-book fa-4x" ></i>
+										<i class="fa fa-file-code fa-4x" ></i>
 										<!-- <img class="rounded" alt="docs" width="64px" height="64px" src="img/wiki.png"> -->
 										<div class="text-dark">
 											<div class="font-weight-bold">
