@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="MagOS Linux официальный сайт" />
 	<meta name="keywords"
-		content="Linux, MagOS, Rosa, 2014.64, 2016.64, 2014red, USB, flash, live, магось, неубиваемая, портативная, флэш, для новичка, линукс, домашняя" />
+		content="Linux, MagOS, Rosa, 2014.64, 2016.64, 2014red, USB, flash, live, uird, магос, магось, неубиваемая, портативная, флэш, для новичка, линукс, домашняя" />
 	<!-- Facebook Open Graph -->
 	<meta name="og:title" content="MagOS-Linux" />
 	<meta name="og:description" content="" />
@@ -270,21 +270,25 @@ background-size: cover;">
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 
-	<script src="js/scripts.js"></script>
-	<script src="js/base64.js"></script>
+	<!-- <script src="js/scripts.js"></script> -->
+	<!-- <script src="js/base64.js"></script> -->
 	<script src="js/marked.js"></script>
 	<script type="text/javascript">
-		var githubApiUrl = 'https://api.github.com/repos/magos-linux/magos-linux.github.io/contents/INFO.md';
+		// var githubApiUrl = 'https://api.github.com/repos/magos-linux/magos-linux.github.io/contents/INFO.md';
+		var githubApiUrl = 'https://raw.githubusercontent.com/magos-linux/magos-linux.github.io/master/INFO.md';
 		var contentContainerId = "#info";
-		var githubApiUrl2 = 'https://api.github.com/repos/magos-linux/magos-linux.github.io/contents/NEWS.md';
+		// var githubApiUrl2 = 'https://api.github.com/repos/magos-linux/magos-linux.github.io/contents/NEWS.md';
+		var githubApiUrl2 = 'https://raw.githubusercontent.com/magos-linux/magos-linux.github.io/master/NEWS.md';
+
 		var contentContainerId2 = "#news";
 
 		$.ajax({
 			url: githubApiUrl,
-			dataType: 'jsonp',
+			// dataType: 'jsonp',
 			success: function (response) {
-				var encodedContent = response.data.content;
-				var markdownText = Base64.decode(encodedContent);
+				// var encodedContent = response.data.content;
+				// var markdownText = Base64.decode(encodedContent);
+				var markdownText = response;
 				var renderedHtml = marked(markdownText);
 
 				$(contentContainerId).html(renderedHtml);
@@ -293,10 +297,11 @@ background-size: cover;">
 
 		$.ajax({
 			url: githubApiUrl2,
-			dataType: 'jsonp',
+			// dataType: 'jsonp',
 			success: function (response) {
-				var encodedContent2 = response.data.content;
-				var markdownText2 = Base64.decode(encodedContent2);
+				// var encodedContent2 = response.data.content;
+				// var markdownText2 = Base64.decode(encodedContent2);
+				var markdownText2 = response;
 				var renderedHtml2 = marked(markdownText2);
 
 				$(contentContainerId2).html(renderedHtml2);
