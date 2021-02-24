@@ -6,6 +6,5 @@
 * ядра 5.4.99 (2016.64) 4.9.257 (2014.*)
 * добавлен пакет wizardpen (2016.64)
 * добавлен модуль 81-chromium с альтернативным браузером chromium-browser-stable (2016.64)
-=======
 
 полную историю изменений см. в [Wiki](https://github.com/magos-linux/magos-linux/wiki/История)
