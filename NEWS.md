@@ -4,15 +4,11 @@
 * обновления на 23.04.2022
 * добавлен клиент telegram
 * в связи с отсутствием сервера ftp на данный момент, сборка доступна только на [Яндекс.Диске](https://disk.yandex.ru/d/Tnne2b40zhMaK). Автоматическое обновление и скачивание с зеркал будут доступны после восстановления работоспособности ftp сервера.
-
-     md5 суммы:
-    
-     e083ba799e2138e8615b72332fcdf810  MagOS_2021_20220423.tar.gz
-     
-     d8242285b607ef7aca2fb5abd641220e  MagOS_2021_20220423.iso
-     
-     910e3bc3e2beb56d7dd042f0dedf18c5  MagOS_2016.64_20220423.tar.gz
-     
-     fea8dcbe1c640b004c0d572c7597375a  MagOS_2016.64_20220423.iso
-
+```     
+md5 суммы:
+e083ba799e2138e8615b72332fcdf810  MagOS_2021_20220423.tar.gz
+d8242285b607ef7aca2fb5abd641220e  MagOS_2021_20220423.iso
+910e3bc3e2beb56d7dd042f0dedf18c5  MagOS_2016.64_20220423.tar.gz
+fea8dcbe1c640b004c0d572c7597375a  MagOS_2016.64_20220423.iso
+```
 полную историю изменений см. в [Wiki](https://github.com/magos-linux/magos-linux/wiki/История)
