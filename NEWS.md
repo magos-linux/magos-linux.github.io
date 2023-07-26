@@ -1,6 +1,8 @@
 #### Текущая сборка
-##### сборка 20230623
-* обновления на 23.06.2023
-* обновленный NetworkManager более не совместим с настройками /etc/sysconfig/network-scripts, для неавтоматических настроек можно использовать шаблоны из [MagOS.ini](https://github.com/magos-linux/magos-linux/blob/master/make_MagOS/files/patches/flash/MagOS-Data/MagOS.ini)
+##### сборка 20230724
+* обновления на 24.07.2023
+* ядро 6.1.38, nvidia525.116.03
+* обновлен EFI загрузчик
+* добавлены пакеты rosa-imagewriter rtl8192eu
 
 полную историю изменений см. в [Wiki](https://github.com/magos-linux/magos-linux/wiki/История)
